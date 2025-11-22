@@ -1,0 +1,8 @@
+%{
+  "circuits_gpio": {:hex, :circuits_gpio, "2.1.3", "7f5b8262a7ee39729b11b42cb5ce3216145649aa315fd08fc3405ca7139382b4", [:make, :mix], [{:elixir_make, "~> 0.6", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm", "8616d3085f0e3b794f330cef8d4200ed83a0a2a8edf011d75d9e024299118220"},
+  "circuits_spi": {:hex, :circuits_spi, "1.4.0", "ca1674c4c955bbd3e6e8d4390c63514da6b6d976b098ed99d375d09b94259a5b", [:make, :mix], [{:elixir_make, "~> 0.6", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm", "bf37c24a720c30a5201b7d098276ef074c1b5a79105e11dec11ddd54d6fb793f"},
+  "elixir_make": {:hex, :elixir_make, "0.9.0", "6484b3cd8c0cee58f09f05ecaf1a140a8c97670671a6a0e7ab4dc326c3109726", [:mix], [], "hexpm", "db23d4fd8b757462ad02f8aa73431a426fe6671c80b200d9710caf3d1dd0ffdb"},
+  "jason": {:hex, :jason, "1.4.4", "b9226785a9aa77b6857ca22832cffa5d5011a667207eb2a0ad56adb5db443b8a", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "c5eb0cab91f094599f94d55bc63409236a8ec69a21a67814529e8d5f6cc90b3b"},
+  "phoenix_client": {:hex, :phoenix_client, "0.11.1", "b64de69050a3a435438a2545d6f3afcd5fa105b74110bb5212364e2f3ce96a46", [:mix], [{:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: true]}, {:websocket_client, "~> 1.3", [hex: :websocket_client, repo: "hexpm", optional: false]}], "hexpm", "07edd8a87725b0158abe35711aeaf857e8f8c3c17727725b9324533d5abdf880"},
+  "websocket_client": {:hex, :websocket_client, "1.6.1", "115b33bf65727129224d3a602830c532481eeda667d37181abf326913473733f", [:rebar3], [], "hexpm", "d2623c48cfcdb41cf4d6b926ff042c2f505c56bada36048eb3bbe251ca4f4ad9"},
+}
