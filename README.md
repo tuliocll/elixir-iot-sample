@@ -124,6 +124,15 @@ The implementation is based on concepts explored in my course assignment:
 
 The assignment analyzed the tierless architecture proposed in Li et al. (2024) and implemented a small IoT prototype showing how Elixir can unify hardware-level logic, processing, and real-time UI in a single language.
 
+## Lessons Learned (Functional Programming)
+
+Through the development of this prototype, several key functional programming concepts proved vital for robust IoT development:
+
+1.  **Immutability vs. Mutable Hardware:** Modeling hardware state (which is inherently mutable) using **GenServers** demonstrated how to isolate side effects. The hardware state is encapsulated within a process loop, allowing the rest of the application to remain pure and functional.
+2.  **Concurrency with the Actor Model:** Unlike imperative loops often used in embedded systems, Elixir's processes allowed decoupling the sensors. The blocking nature of the RC Timing (LDR) does not interfere with the WebSocket communication or the DS18B20 polling, as they run in isolated lightweight processes.
+3.  **Declarative Data Handling:** Using **Pattern Matching** to handle binary data from sensors and payloads from WebSockets eliminated complex conditional logic, resulting in code that describes "what the data looks like" rather than "how to parse it."
+4.  **Fault Tolerance:** Leveraging **Supervision Trees** ensured that a hardware glitch (e.g., a sensor read error) causes only the specific worker to restart, rather than crashing the entire device, adhering to the "Let it Crash" philosophy.
+
 ## 📝 License
 
 MIT — free for academic, personal, or commercial use.
